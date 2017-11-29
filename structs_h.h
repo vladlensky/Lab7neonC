@@ -19,13 +19,19 @@ typedef struct bmp_header {
 } bmp_header_t;
 
 #pragma pack(push,1)
-typedef struct pixel {
+struct pixel {
 	uint8_t b;
 	uint8_t g;
 	uint8_t r;
-} pixel_t;
+};
 #pragma pack(pop)
 typedef struct image {
 	uint64_t width, height;
 	struct pixel* data;
 } image_t;
+
+typedef struct pixel_f {
+    uint8_t b;
+    uint8_t g;
+    uint8_t r;
+} pixel_t;

@@ -95,14 +95,3 @@ struct bmp_header* rotate_header(struct bmp_header const * old_header) {
 	new_header->biSizeImage = new_sizeImage;
 	return new_header;
 }
-
-image_t sepia(image_t input_image){
-    double begin, end, time_spent;
-    image_t result_image;
-    result_image.height = input_image.height;
-    result_image.width = input_image.width;
-    int size = result_image.width*result_image.height;
-    result_image.data= malloc(size * sizeof(pixel_t));
-    sepia_asm(input_image.data, size, result_image.data);
-    return result_image;
-}

@@ -31,12 +31,16 @@ stdint.h
 -
 stdlib.h
 -
+time.h
+-
 structs_h.h
 /home/vladlensky/CLionProjects/lab5c/structs_h.h
 functions_h.h
 /home/vladlensky/CLionProjects/lab5c/functions_h.h
 sepia.h
 /home/vladlensky/CLionProjects/lab5c/sepia.h
+math.h
+-
 
 /home/vladlensky/CLionProjects/lab5c/sepia.c
 stdint.h
